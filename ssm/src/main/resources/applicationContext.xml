@@ -15,7 +15,7 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 
 
 
-<!-- 配置组件扫描 扫描service mapper 并排除controller扫描，controller在spring-mvc.xml中扫-->
+<!-- 配置组件扫描 扫描service mapper包 并排除controller扫描，controller在spring-mvc.xml中扫-->
     <context:component-scan base-package="com.demo.service">
        <!-- <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
     </context:component-scan>
