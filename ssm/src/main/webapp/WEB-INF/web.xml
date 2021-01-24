@@ -7,7 +7,9 @@
    <!-- 配置spring监听器-->
    <context-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>classpath:applicationContext.xml</param-value>
+     <!-- <param-value>classpath:applicationContext.xml</param-value>-->
+     <!--  使用匹配规则，导入使用多个配置文件-->
+       <param-value>classpath*:applicationContext*.xml</param-value>
    </context-param>
    <listener>
       <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
